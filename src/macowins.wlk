@@ -78,7 +78,7 @@ class Venta{
 class Tarjeta{
 	var cuotas
 	
-	const coeficiente = 0.5
+	const coeficiente = 0.5 //inventado (?
 	
 	constructor(_cuotas){ 
 		cuotas = _cuotas
@@ -87,6 +87,8 @@ class Tarjeta{
 	method total(totalPrendas) = totalPrendas + self.recargo(totalPrendas)
 	
 	method recargo(totalPrendas) = cuotas * coeficiente + 0.01 * totalPrendas
+	
+	
 	
 }
 
